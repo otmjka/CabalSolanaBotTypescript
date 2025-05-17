@@ -1,0 +1,3 @@
+[submodule "CabalProto"]
+	path = CabalProto
+	url = git@github.com:otmjka/CabalProto.git

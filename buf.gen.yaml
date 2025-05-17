@@ -1,0 +1,11 @@
+# buf.gen.yaml defines a local generation template.
+# For details, see https://buf.build/docs/configuration/v2/buf-gen-yaml
+version: v2
+inputs:
+  - directory: CabalProto/protos
+plugins:
+  # This will invoke protoc-gen-es and write output to src/gen
+  - local: protoc-gen-es
+    out: src/CabalRpc
+    # Add more plugin options here
+    opt: target=ts

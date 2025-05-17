@@ -1,0 +1,47 @@
+{
+  "name": "CabalBotGRPCClient",
+  "version": "0.0.1",
+  "description": "a @connectrpc/connect typescript client for https://github.com/CabalSolanaBot/CabalProto",
+  "homepage": "https://github.com/otmjka/CabalSolanaBotTypescript#readme",
+  "bugs": {
+    "url": "https://github.com/otmjka/CabalSolanaBotTypescript/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otmjka/CabalSolanaBotTypescript.git"
+  },
+  "keywords": [
+    "protobuf",
+    "typescript",
+    "cabal"
+  ],
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "buf:generate": "npx buf generate",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@bufbuild/protobuf": "^2.4.0",
+    "@connectrpc/connect": "^2.0.2",
+    "@connectrpc/connect-web": "^2.0.2"
+  },
+  "devDependencies": {
+    "@bufbuild/buf": "^1.54.0",
+    "@bufbuild/protoc-gen-es": "^2.4.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  }
+}
